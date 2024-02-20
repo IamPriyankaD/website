@@ -1,0 +1,865 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <title>Bon Voyage</title>
+    <style>
+      @media only screen and (max-width: 600px) {
+        h2 {
+          font-size: 20px;
+          margin-top: 5px;
+        }
+      }
+    
+      @media only screen and (min-width: 601px) and (max-width: 1024px) {
+        h2 {
+          font-size: 24px;
+          margin-top: 8px;
+        }
+      }
+      h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {}
+        a,
+        a:hover,
+        a:focus,
+        a:active {
+            text-decoration: none;
+            outline: none;
+        }
+        
+        a,
+        a:active,
+        a:focus {
+            color: #333;
+            text-decoration: none;
+            transition-timing-function: ease-in-out;
+            -ms-transition-timing-function: ease-in-out;
+            -moz-transition-timing-function: ease-in-out;
+            -webkit-transition-timing-function: ease-in-out;
+            -o-transition-timing-function: ease-in-out;
+            transition-duration: .2s;
+            -ms-transition-duration: .2s;
+            -moz-transition-duration: .2s;
+            -webkit-transition-duration: .2s;
+            -o-transition-duration: .2s;
+        }
+        
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        img {
+    max-width: 100%;
+    height: auto;
+}
+span, a, a:hover {
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+}
+.section-head {
+  margin-bottom: 60px;
+}
+.section-head h4 {
+  position: relative;
+  padding:0;
+  color:#f91942;
+  line-height: 1;
+  letter-spacing:0.3px;
+  font-size: 34px;
+  font-weight: 700;  
+  text-align:center;
+  text-transform:none;
+  margin-bottom:30px;
+}
+.section-head h4:before {
+  content: '';
+  width: 60px;
+  height: 3px;
+  background: #f91942;
+  position: absolute;
+  left: 0px;
+  bottom: -10px;
+  right:0;  
+  margin:0 auto;
+}
+.section-head h4 span {
+  font-weight: 700;
+  padding-bottom: 5px;
+  color:#2f2f2f
+}
+p.service_text{
+  color:#cccccc !important;
+  font-size:16px;
+  line-height:28px;
+  text-align:center;    
+}
+.section-head p, p.awesome_line{
+  color:#818181;
+  font-size:16px;
+  line-height:28px;
+  text-align:center;  
+}
+
+.extra-text {
+    font-size:34px;
+    font-weight: 700;
+    color:#2f2f2f;
+    margin-bottom: 25px;
+    position:relative;
+    text-transform: none;
+}
+.extra-text::before {
+    content: '';
+    width: 60px;
+    height: 3px;
+    background: #f91942;
+    position: absolute;
+    left: 0px;
+    bottom: -10px;
+    right: 0;
+    margin: 0 auto;
+}
+.extra-text span {
+    font-weight: 700;
+    color:#f91942;
+}
+.item {
+    background: #fff;
+    text-align: center;
+    padding: 30px 25px;
+    -webkit-box-shadow:0 0px 25px rgba(0, 0, 0, 0.07);
+    box-shadow:0 0px 25px rgba(0, 0, 0, 0.07);
+    border-radius: 20px;
+    border:5px solid rgba(0, 0, 0, 0.07);
+    margin-bottom: 30px;
+    -webkit-transition: all .5s ease 0;
+    transition: all .5s ease 0;
+    transition: all 0.5s ease 0s;
+}
+.item:hover{
+    background:skyblue;
+    box-shadow:0 8px 20px 0px rgba(0, 0, 0, 0.2);
+    -webkit-transition: all .5s ease 0;
+    transition: all .5s ease 0;
+    transition: all 0.5s ease 0s;
+}
+.item:hover .item, .item:hover span.icon{
+    background:#fff;
+    border-radius:10px;
+    -webkit-transition: all .5s ease 0;
+    transition: all .5s ease 0;
+    transition: all 0.5s ease 0s;
+}
+.item:hover h6, .item:hover p{
+    color:#fff;
+    -webkit-transition: all .5s ease 0;
+    transition: all .5s ease 0;
+    transition: all 0.5s ease 0s;
+}
+.item .icon {
+    font-size: 40px;
+    margin-bottom:25px;
+    color: #f91942;   
+    width: 90px;
+    height: 90px;
+    line-height: 96px;
+    border-radius: 50px;
+}
+.item .feature_box_col_one{
+    background:rgba(247, 198, 5, 0.20);
+    color:#f91942
+}
+.item .feature_box_col_two{
+    background:rgba(255, 77, 28, 0.15);
+    color:#f91942
+}
+.item .feature_box_col_three{
+    background:rgba(0, 147, 38, 0.15);
+    color:#f91942
+}
+.item .feature_box_col_four{
+    background:rgba(0, 108, 255, 0.15);
+    color:#f91942
+}
+.item .feature_box_col_five{
+    background:rgba(146, 39, 255, 0.15);
+    color:#f91942
+}
+.item .feature_box_col_six{
+    background:rgba(23, 39, 246, 0.15);
+    color:#f91942
+}
+.item p{
+    font-size:15px;
+    line-height:26px;
+}
+.item h6 {
+    margin-bottom:20px;
+    color:#2f2f2f;
+}
+.mission p {
+    margin-bottom: 10px;
+    font-size: 15px;
+    line-height: 28px;
+    font-weight: 500;
+}
+.mission i {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background: #f91942;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 25px;
+}
+.mission .small-text {
+    margin-left: 10px;
+    font-size: 13px;
+    color: #666;
+}
+.skills {
+    padding-top:0px;
+}
+.skills .prog-item {
+    margin-bottom: 25px;
+}
+.skills .prog-item:last-child {
+    margin-bottom: 0;
+}
+.skills .prog-item p {
+    font-weight: 500;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+.skills .prog-item .skills-progress {
+    width: 100%;
+    height: 10px;
+    background: #e0e0e0;
+    border-radius:20px;
+    position: relative;
+}
+.skills .prog-item .skills-progress span {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    background: skyblue;
+    width: 10%;
+    border-radius: 10px;
+    -webkit-transition: all 1s;
+    transition: all 1s;
+}
+.skills .prog-item .skills-progress span:after {
+    content: attr(data-value);
+    position: absolute;
+    top: -5px;
+    right: 0;
+    font-size: 10px;
+    font-weight:600;    
+    color: #fff;
+    background:rgba(0, 0, 0, 0.9);
+    padding: 3px 7px;
+    border-radius: 30px;
+}
+input {
+  border: unset;
+  background-color: var(--input-background);
+  padding: var(--padding-15);
+  font-size: 13px;
+  border-radius: var(--radius-50);
+  width: 250px;
+}
+@media screen and (max-width: 720px) {
+ input {
+    width: 200px;
+    margin-bottom: 10px;
+  }
+}
+
+.form {
+	margin-bottom: 25px;
+}
+
+.form__email {
+	padding: 20px 25px;
+	border-radius: 5px;
+ 	border: 1px solid #CAD3DB;
+	width: 370px;
+	font-size: 18px;
+	color: #0F121F;
+}
+
+.form__email:focus {
+	outline: 1px solid #3D9FFF;
+}
+
+.form__button {
+  margin-top: 10px;
+	background:green;
+	padding: 10px;
+	border: none;
+	width: 244px;
+	height: 40px;
+	border-radius: 15px;
+	font-size: 18px;
+	color: white;
+	box-shadow: 0 4px 20px rgba(61, 159, 255, 0.7);
+}
+
+.form__button:hover {
+	box-shadow: 0 10px 20px rgba(61, 159, 255, 0.7);
+}
+
+    </style>
+    <style>
+      .y-us-section {
+          padding: 82px 0 82px;
+      }
+      .y-us-head {
+          text-align: center;
+          margin: 0 0 91px;
+      }
+      .y-us-title h2 {
+          color: #000;
+          font-size: 30px;
+          letter-spacing: 0;
+          line-height: 32px;
+          text-transform: uppercase;
+          margin-bottom: 6px;
+      }
+      .y-us-title > p {
+          color: #777777;
+          line-height: 22px;
+      }
+      .y-us-title-border {
+          background: #ffae11 none repeat scroll 0 0;
+          border-radius: 2px;
+          display: inline-block;
+          height: 3px;
+          position: relative;
+          width: 50px;
+      }
+      .service-3 .service-box {
+          margin-bottom: 18px;
+      }
+      .service-3 .service-box .iconset {
+          float: left;
+          text-align: center;
+          width: 25%;
+      }
+      .service-3 .service-box .iconset i {
+          color: #000;
+          font-size: 44px;
+      }
+      .service-3 .service-box .y-us-content {
+          float: left;
+          width: 75%;
+      }
+      service-3 .service-box .y-us-content h4 {
+          color: #3a3a3a;
+          font-size: 18px;
+          letter-spacing: 0;
+          line-height: 22px;
+          margin: 14px 0 12px;
+          text-transform: uppercase;
+      }
+      .service-3 .service-box .y-us-content p {
+          color: #777777;
+          font-size: 13px;
+          font-weight: 300;
+          line-height: 24px;
+      }
+      
+      .icon {
+          color : #f4b841;
+          padding:0px;
+          font-size:40px;
+          border: 1px solid #fdb801;
+          border-radius: 100px;
+          color: #fdb801;
+          font-size: 28px;
+          height: 30px;
+          line-height: 70px;
+          text-align: center;
+          width: 30px;
+      }
+      .bd:hover{
+            color: green;
+            background-color:green;
+      }
+      </style>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/templatemo-woox-travel.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+<!--
+
+TemplateMo 580 Woox Travel
+
+https://templatemo.com/tm-580-woox-travel
+
+-->
+
+  </head>
+
+<body>
+
+  <!-- ***** Preloader Start ***** -->
+  <div id="js-preloader" class="js-preloader">
+    <div class="preloader-inner">
+      <span class="dot"></span>
+      <div class="dots">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+  <!-- ***** Preloader End ***** -->
+
+  <!-- ***** Header Area Start ***** -->
+  <header class="header-area header-sticky">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <nav class="main-nav">
+                    <!-- ***** Logo Start ***** -->
+                   <!--<a href="index.html" class="logo">
+                        <img src="assets/images/logo.png" alt="">
+                    </a>--> 
+                    <h2 style="margin-top: 10px;">Bon Voyage</h2>
+                    <!-- ***** Logo End ***** -->
+                    <!-- ***** Menu Start ***** -->
+                    <ul class="nav">
+                        <li><a href="index.html" class="active">Destination</a></li>
+                        <li><a href="index.html">Hotels</a></li>
+                        <li><a href="index.html">Flights</a></li>
+                        <li><a href="index.html">Booking</a></li>
+                        <button class="bd" style="background-color: orangered; margin-left: 40px; border-radius: 20px; border:1px solid orangered ; color: white;">Login</button>
+                        <button class="bd" style="background-color: orangered; margin-left: 40px; border-radius: 20px; border: 1px solid orangered; margin-right: 20px; color: white;" >Signup</button>
+                        
+
+                    </ul>   
+                    <a class='menu-trigger'>
+                        <span>Menu</span>
+                    </a>
+                    <!-- ***** Menu End ***** -->
+                </nav>
+            </div>
+        </div>
+    </div>
+  </header>
+  <!-- ***** Header Area End ***** -->
+
+  <!-- ***** Main Banner Area Start ***** -->
+  <section id="section-1">
+    <div class="content-slider">
+      <input type="radio" id="banner1" class="sec-1-input" name="banner" checked>
+    <!--  <input type="radio" id="banner2" class="sec-1-input" name="banner">
+      <input type="radio" id="banner3" class="sec-1-input" name="banner">
+      <input type="radio" id="banner4" class="sec-1-input" name="banner">-->
+      <div class="slider">
+        <div id="top-banner-1" class="banner">
+          <div class="banner-inner-wrapper header-text">
+            <div class="main-caption">
+              <h1>Travel, enjoy and live a new and full life</h1>
+              <h2>BEST DESTINATIONS AROUND THE WORLD</h2>
+              <div class="border-button"><a href="index.html">Find Out More</a></div>
+            </div>
+          
+        </div>
+        <div id="top-banner-2" class="banner">
+          <div class="banner-inner-wrapper header-text">
+            <div class="main-caption">
+              <h2>Take a Glimpse Into The Beautiful Country Of:</h2>
+              <h1>Switzerland</h1>
+              <div class="border-button"><a href="index.html">Go There</a></div>
+            </div>
+          
+          </div>
+        </div>
+        <div id="top-banner-3" class="banner">
+          <div class="banner-inner-wrapper header-text">
+            <div class="main-caption">
+              <h2>Take a Glimpse Into The Beautiful Country Of:</h2>
+              <h1>France</h1>
+              <div class="border-button"><a href="index.html">Go There</a></div>
+            </div>
+         
+          </div>
+        </div>
+        
+          </div>
+        </div>
+      </div>
+      <!--<nav>
+        <div class="controls">
+          <label for="banner1"><span class="progressbar"><span class="progressbar-fill"></span></span><span class="text">1</span></label>
+          <label for="banner2"><span class="progressbar"><span class="progressbar-fill"></span></span><span class="text">2</span></label>
+          <label for="banner3"><span class="progressbar"><span class="progressbar-fill"></span></span><span class="text">3</span></label>
+          <label for="banner4"><span class="progressbar"><span class="progressbar-fill"></span></span><span class="text">4</span></label>
+        </div>
+      </nav>-->
+    </div>
+  </section>
+  <!-- ***** Main Banner Area End ***** -->
+  <div class="weekly-offers">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 offset-lg-3">
+          <div class="section-heading text-center">
+            <h4 style="color: blueviolet;">CATEGORY</h4>
+            <h1>We Offer Best Services</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="owl-weekly-offers owl-carousel">
+            <div class="item">
+              <div class="thumb">
+                <img src="assets/images/offers-01.jpg" alt="">
+                <div class="text">
+                  <h4>Calculated Weather<br></h4>
+                  <p>As much of information possible with the weather</p>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="thumb">
+                <img src="assets/images/offers-02.jpg" alt="">
+                <div class="text">
+                  <h4>Best Flights<br></h4>
+                  <p>Getting cheap best flights</p>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="thumb">
+                <img src="assets/images/offers-03.jpg" alt="">
+                <div class="text">
+                  <h4>Local Events<br><!--<span><i class="fa fa-users"></i> 234 Check Ins</span>--></h4>
+                  <!--<h6>$420<br><span>/person</span></h6>
+                  <div class="line-dec"></div>
+                  <ul>
+                    <li>Deal Includes:</li>
+                    <li><i class="fa fa-taxi"></i> 5 Days Trip > Hotel Included</li>
+                    <li><i class="fa fa-plane"></i> Airplane Bill Included</li>
+                    <li><i class="fa fa-building"></i> Daily Places Visit</li>
+                  </ul>
+                  <div class="main-button">
+                    <a href="reservation.html">Make a Reservation</a>
+                  </div>-->
+                  <p style="color:gray;">Getting good iternary based on the events</p>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="thumb">
+                <img src="assets/images/offers-01.jpg" alt="">
+                <div class="text">
+                  <h4>Costamization<br><!--<span><i class="fa fa-users"></i> 234 Check Ins</span></h4>
+                  <h6>$420<br><span>/person</span></h6>
+                  <div class="line-dec"></div>
+                  <ul>
+                    <li>Deal Includes:</li>
+                    <li><i class="fa fa-taxi"></i> 5 Days Trip > Hotel Included</li>
+                    <li><i class="fa fa-plane"></i> Airplane Bill Included</li>
+                    <li><i class="fa fa-building"></i> Daily Places Visit</li>
+                  </ul>
+                  <div class="main-button">
+                    <a href="reservation.html">Make a Reservation</a>
+                  </div>-->
+                  <p style="color: gray;"> We deliver outsourced services for customers</p>
+                </div>
+              </div>
+            </div>
+            <!--<div class="item">
+              <div class="thumb">
+                <img src="assets/images/offers-02.jpg" alt="">
+                <div class="text">
+                  <h4>Kingston<br><span><i class="fa fa-users"></i> 234 Check Ins</span></h4>
+                  <h6>$420<br><span>/person</span></h6>
+                  <div class="line-dec"></div>
+                  <ul>
+                    <li>Deal Includes:</li>
+                    <li><i class="fa fa-taxi"></i> 5 Days Trip > Hotel Included</li>
+                    <li><i class="fa fa-plane"></i> Airplane Bill Included</li>
+                    <li><i class="fa fa-building"></i> Daily Places Visit</li>
+                  </ul>
+                  <div class="main-button">
+                    <a href="reservation.html">Make a Reservation</a>
+                  </div>
+                </div>
+              </div>
+            </div>-->
+            <!--<div class="item">
+              <div class="thumb">
+                <img src="assets/images/offers-03.jpg" alt="">
+                <div class="text">
+                  <h4>George Town<br><span><i class="fa fa-users"></i> 234 Check Ins</span></h4>
+                  <h6>$420<br><span>/person</span></h6>
+                  <div class="line-dec"></div>
+                  <ul>
+                    <li>Deal Includes:</li>
+                    <li><i class="fa fa-taxi"></i> 5 Days Trip > Hotel Included</li>
+                    <li><i class="fa fa-plane"></i> Airplane Bill Included</li>
+                    <li><i class="fa fa-building"></i> Daily Places Visit</li>
+                  </ul>
+                  <div class="main-button">
+                    <a href="reservation.html">Make a Reservation</a>
+                  </div>
+                </div>
+              </div>
+            </div>-->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+  <div class="cities-town">
+    <div class="container">
+      <div class="row">
+        <div class="slider-content">
+          <div class="row">
+            <div class="col-lg-12">
+              <h4 style="text-align: center; color: darkblue;" >Top Selling</h4>
+              <h2 style="text-align: center;">Top Destinations</h2>
+            </div>
+            <div class="col-lg-12">
+              <div class="owl-cites-town owl-carousel">
+                <div class="item">
+                  <div class="thumb">
+                    <img src="assets/images/cities-01.jpg" alt="">
+                    
+                    <span>$5,42Lakh</span>   <p> 10 Days Trip</p>
+                    <h5>Rome, Italty</h5> 
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="thumb">
+                    <img src="assets/images/cities-02.jpg" alt="">
+                   
+                    <span>$4.2Lakh</span>   <p> 12 Days Trip</p>
+                    <h5>London, UK</h5>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="thumb">
+                    <img src="assets/images/cities-04.jpg" alt="">
+                    
+                    <span>$15Lakh</span>   <p> 28 Days Trip</p>
+                    <h5>Full Europe</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<!--stps-->
+<div class="y-us-section">
+  <div class="container">
+      <div class="row">
+          <div class="col-md-8 col-md-offset-2 col-sm-12 col-xs-12">
+              <div class="y-us-head">
+                  <div class="y-us-title">
+                      <h5 style="color: blue;">Easy and Fast</h5>
+                      <h2>Book Your Next Trip</h2>
+                      <h2>In 3 Easy Steps</h2>
+                      <span class="y-us-title-border"></span>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="row">
+          <div class="col-md-4 col-sm-6 col-xs-12">
+              <div class="y-us-content">
+                  <div class="service-3">
+                      <div class="service-box">
+                          <div class="clearfix">
+                              <div class="iconset">
+                                  <span class="glyphicon glyphicon-cog icon"></span>
+                              </div>
+                              <div class="y-us-content">
+                                  <h4>Choose Destination </h4>
+                                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor </p>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="service-box">
+                          <div class="clearfix">
+                              <div class="iconset">
+                                  <span class="glyphicon glyphicon-cog icon"></span>
+                              </div>
+                              <div class="y-us-content">
+                                  <h4>Make Payment</h4>
+                                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor </p>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="service-box">
+                          <div class="clearfix">
+                              <div class="iconset">
+                                  <span class="glyphicon glyphicon-cog icon"></span>
+                              </div>
+                              <div class="y-us-content">
+                                  <h4>Reach Airport on Selected Date</h4>
+                                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor </p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-12">
+              <div class="why-choose-banner">
+                  <img src="http://themeinnovation.com/demo2/html/build-up/img/home1/why-choose.jpg" alt="">
+              </div>
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-12">
+              <div class="y-us-contentbox">
+                  <div class="service-3">
+                      
+                    <div class="item">
+              <div class="thumb">
+                <img src="assets/images/offers-01.jpg" alt="">
+                <div class="text">
+                  <h4>Bon Voyage<br></h4>
+                  <p>Lorem ipsum dolor, sit amet consectetur adi</p>
+                </div>
+              </div>
+            </div>
+                     
+                
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+  <!--whyy choose us-->
+  <div class="feat bg-gray pt-5 pb-5">
+    <div class="container">
+      <div class="row">
+        <div class="section-head col-sm-12">
+          <h4><span>Why Choose</span> Us?</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <div class="item"> <span class="icon feature_box_col_one"><i class="fa fa-globe"></i></span>
+            <h6>Handpicked Hotels</h6>
+            <p style="color: black;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur eum labore quisquam nemo delectus enim odit accusantium amet ducimus iusto neque tempora error aut eveniet nulla, soluta velit adipisci non?</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <div class="item"> <span class="icon feature_box_col_two"><i class="fa fa-anchor"></i></span>
+            <h6>World Class Service</h6>
+            <p style="color: black;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum odio eveniet nobis beatae temporibus enim id laboriosam aut atque quo, ducimus rerum reiciendis in, quae optio eligendi inventore cupiditate incidunt!</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <div class="item"> <span class="icon feature_box_col_three"><i class="fa fa-hourglass-half"></i></span>
+            <h6>Best Price Guarantee</h6>
+            <p style="color: black;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis ipsa cupiditate quasi ipsam exercitationem sapiente, quia inventore perferendis, eius, nobis aut fuga cumque maiores voluptate. Optio nobis nulla fuga quis.</p>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="call-to-action">
+    <div class="container">
+      <div class="row">
+       <div class="col-lg-8">
+          <h4>Subscribe to get information, latest news and other interesting offers at Bon Voyage</h4>
+          <!--<input type="email" name="email" placeholder="Your Email">-->
+        </div>
+        <div class="col-lg-4">
+         <!-- <div class="border-button">
+            <a href="reservation.html">Subscribe</a>
+          </div>-->
+          <div class="form">
+		      <input type="email" class="form__email" placeholder="Enter your email address" />
+		      <button class="form__button">Subscribe</button>
+	        </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <p> All rights reserved@bonvoyage.co</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- Scripts -->
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+  <script src="assets/js/isotope.min.js"></script>
+  <script src="assets/js/owl-carousel.js"></script>
+  <script src="assets/js/wow.js"></script>
+  <script src="assets/js/tabs.js"></script>
+  <script src="assets/js/popup.js"></script>
+  <script src="assets/js/custom.js"></script>
+
+  <script>
+    function bannerSwitcher() {
+      next = $('.sec-1-input').filter(':checked').next('.sec-1-input');
+      if (next.length) next.prop('checked', true);
+      else $('.sec-1-input').first().prop('checked', true);
+    }
+
+    var bannerTimer = setInterval(bannerSwitcher, 5000);
+
+    $('nav .controls label').click(function() {
+      clearInterval(bannerTimer);
+      bannerTimer = setInterval(bannerSwitcher, 5000)
+    });
+  </script>
+
+  </body>
+
+</html>
